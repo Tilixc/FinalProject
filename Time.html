@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnTime</title>
+    <link rel="stylesheet" href="./time-style.css">
+    <link rel="icon" href="./unknown.png">
+
+</head>
+
+
+<body>
+    <div class="header">
+        
+        <div class="inner_header">
+            <div class="logo_container">
+                <h1>On<span>Time</span></h1>
+                <img src="./unknown.png">
+        
+            </div>
+             <!-- <ul class="navigation">
+                <a><li>Home</li></a>
+                <a><li>About</li></a>
+                <a><li>Portfolio</li></a>
+                <a><li>Contact</li></a>
+
+            </ul>  -->
+            <!-- <div class="navigation">
+                <ul>
+                    <li class="list active">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="title">Home</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="time-outline"></ion-icon>
+                            </span>
+                            <span class="title">Time</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                            </span>
+                            <span class="title">productivity</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="videocam-outline"></ion-icon>
+                            </span>
+                            <span class="title">Videos and Courses</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="tablet-landscape-outline"></ion-icon>
+                            </span>
+                            <span class="title">Graduation Pictures</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="book-outline"></ion-icon>
+                            </span>
+                            <span class="title">The Books and Audio Books </span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                            </span>
+                            <span class="title">Profile</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="settings-outline"></ion-icon>
+                            </span>
+                            <span class="title">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            
+              -->
+
+              
+        </div>
+        <!-- <div class="introduction">
+            <h2>Welcome To OnTime</h2>
+            <p>OnTime is A Website To Time Management And Increase Productivity To Do Things OnTime And In The Best Way   </p>
+            <br>
+            <p>OnTime Will Help You To Management Your Time And Increase Your Productivity Through Free And Paid Courses And Videos Which We Will Recommend To You</p>
+            <br>
+            <p>And There Are Also Different And Other Fun Ways Such As Expressive Pictures, Books And Audio Books ,And More With Upcoming Updates</p>
+
+
+        </div> -->
+        <div class="navigation">
+            <ul>
+                <li class="list">
+                    <a href="./index.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li class="list  active">
+                    <a href="./Time.html">
+                        <span class="icon">
+                            <ion-icon name="time-outline"></ion-icon>
+                        </span>
+                        <span class="title">Time</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                        </span>
+                        <span class="title">productivity</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="videocam-outline"></ion-icon>
+                        </span>
+                        <span class="title">Videos and Courses</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="./Pictures.html">
+                        <span class="icon">
+                            <ion-icon name="tablet-landscape-outline"></ion-icon>
+                        </span>
+                        <span class="title">Graduation Pictures</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </span>
+                        <span class="title">The Books and Audio Books </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                        </span>
+                        <span class="title">Profile</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+
+    <script>
+        const list = document.querySelectorAll('.list')
+
+        function activelink(){
+            list.forEach((item) => 
+            this.classlist.remove('active'));
+            this.classlist.add('active')
+        }
+        list.forEach((item) =>
+        item.addEventListener('click' , activelink))
+
+        
+    </script>
+
+
+   <!-- <div class="to-do">
+    <div class="to-do-list">
+        <input class="input" type="text" id="item" name="item">
+        
+        <button class="button" type="button">Add</button>
+
+        <ul class="item-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+
+    
+   </div> -->
+   <script src="./Time.js"></script>
+
+   <h3>To-do List</h3>
+  <div class="todo-grid-parent">
+
+    <div>
+      <div class="todo-input todo-block">
+        <span>To-do: </span>
+        <input type="text" placeholder="Enter new to-do">
+        <span>Category: </span>
+        <input type="text" placeholder="Enter category" list="categoryList">
+        <datalist id="categoryList">
+          <option value="Personal"></option>
+          <option value="Work"></option>
+        </datalist>
+        <span>Date:</span>
+        <input type="date" id="dateInput">
+        <span>Time:</span>
+        <input type="time" id="timeInput">
+        <span></span>
+        <button id="addBtn">Add</button>
+        <span></span>
+        <button id="sortBtn">Sort by Date</button>
+        <span></span>
+        <label><input type="checkbox" id="shortlistBtn"> Incomplete First </label>
+
+      </div>
+
+      <div class="todo-block todoTable-block">
+        <div class="itemsPerPage">
+          <span>items per page</span>
+          <select id="itemsPerPageSelectElem">
+            <option>5</option>
+            <option>10</option>
+            <option>20</option>
+          </select>
+        </div>
+
+        <table id="todoTable">
+          <tr>
+            <td></td>
+            <td>Date</td>
+            <td>Time</td>
+            <td>to-do</td>
+            <td>
+              <select id="categoryFilter">
+              </select>
+            </td>
+            <td></td>
+          </tr>
+        </table>
+
+        <div class="pagination-pages">
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="todo-calendar  todo-block">
+      <div id='calendar'></div>
+    </div>
+
+  </div> <!-- class="todo-grid-parent" -->
+
+  <div class="todo-overlay" id="todo-overlay">
+    <div class="todo-modal" id="todo-modal">
+      <div class="todo-input todo-block">
+        <span>To-do: </span>
+        <input type="text" placeholder="Enter new to-do" id="todo-edit-todo">
+        <span>Category: </span>
+        <input type="text" placeholder="Enter category" list="categoryList" id="todo-edit-category">
+        <datalist id="categoryList">
+          <option value="Personal"></option>
+          <option value="Work"></option>
+        </datalist>
+        <span>Date:</span>
+        <input type="date" id="todo-edit-date">
+        <span>Time:</span>
+        <input type="time" id="todo-edit-time">
+        <span></span>
+        <button id="changeBtn">Save Change</button>
+      </div>
+    </div>
+    <div class="todo-modal-close-btn" id="todo-modal-close-btn">X</div>
+  </div>
+
+
+
+    
+
+  <br>
+  <br>
+  <br>
+ <footer class="footer">
+    <div class="footerdiv">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returans</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-col">
+                <h4>Sources</h4>
+                <ul>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Google</a></li>
+                    <li><a href="#">Stackoverflow</a></li>
+                    <li><a href="#"></a></li>
+                    
+                </ul>
+            </div> 
+
+
+
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </i></a>
+                    <a href="#"><i class="fab fa-twitter">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </i></a>
+                    <a href="#"><i class="fab fa-instagram">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </i></a>
+                    <a href="#"><i class="fab fa-linkedin-in">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </i></a>
+                </div>
+
+             
+            </div>
+        </div>
+    </div>
+ </footer>  
+
+
+
+
+ 
+
+    
+</body>
+</html>

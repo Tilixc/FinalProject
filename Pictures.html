@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnTime</title>
+    <link rel="stylesheet" href="./Pictures.css">
+    <link rel="icon" href="./unknown.png">
+
+</head>
+
+
+<body>
+    <div class="header">
+        
+        <div class="inner_header">
+            <div class="logo_container">
+                <h1>On<span>Time</span></h1>
+                <img src="./unknown.png">
+        
+            </div>
+             <!-- <ul class="navigation">
+                <a><li>Home</li></a>
+                <a><li>About</li></a>
+                <a><li>Portfolio</li></a>
+                <a><li>Contact</li></a>
+
+            </ul>  -->
+            <!-- <div class="navigation">
+                <ul>
+                    <li class="list active">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="title">Home</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="time-outline"></ion-icon>
+                            </span>
+                            <span class="title">Time</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                            </span>
+                            <span class="title">productivity</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="videocam-outline"></ion-icon>
+                            </span>
+                            <span class="title">Videos and Courses</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="tablet-landscape-outline"></ion-icon>
+                            </span>
+                            <span class="title">Graduation Pictures</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="book-outline"></ion-icon>
+                            </span>
+                            <span class="title">The Books and Audio Books </span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                            </span>
+                            <span class="title">Profile</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="settings-outline"></ion-icon>
+                            </span>
+                            <span class="title">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            
+              -->
+
+              
+        </div>
+        <!-- <div class="introduction">
+            <h2>Welcome To OnTime</h2>
+            <p>OnTime is A Website To Time Management And Increase Productivity To Do Things OnTime And In The Best Way   </p>
+            <br>
+            <p>OnTime Will Help You To Management Your Time And Increase Your Productivity Through Free And Paid Courses And Videos Which We Will Recommend To You</p>
+            <br>
+            <p>And There Are Also Different And Other Fun Ways Such As Expressive Pictures, Books And Audio Books ,And More With Upcoming Updates</p>
+
+
+        </div> -->
+        <div class="navigation">
+            <ul>
+                <li class="list">
+                    <a href="./index.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="./Time.html">
+                        <span class="icon">
+                            <ion-icon name="time-outline"></ion-icon>
+                        </span>
+                        <span class="title">Time</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                        </span>
+                        <span class="title">productivity</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="videocam-outline"></ion-icon>
+                        </span>
+                        <span class="title">Videos and Courses</span>
+                    </a>
+                </li>
+                <li class="list  active">
+                    <a href="./Pictures.html">
+                        <span class="icon">
+                            <ion-icon name="tablet-landscape-outline"></ion-icon>
+                        </span>
+                        <span class="title">Graduation Pictures</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </span>
+                        <span class="title">The Books and Audio Books </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                        </span>
+                        <span class="title">Profile</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+
+    <script>
+        const list = document.querySelectorAll('.list')
+
+        function activelink(){
+            list.forEach((item) => 
+            this.classlist.remove('active'));
+            this.classlist.add('active')
+        }
+        list.forEach((item) =>
+        item.addEventListener('click' , activelink))
+
+        
+    </script>
+    
+
+
+    <div class="imgs">
+
+        <img class="img" src="./الصورة المغبرة/1.jpeg">
+        <img class="img" src="./الصورة المغبرة/2.jpeg">
+        <img class="img" src="./الصورة المغبرة/3.jpeg">
+        <img class="img" src="./الصورة المغبرة/4.jpeg">
+        <img class="img" src="./الصورة المغبرة/5.jpeg">
+        <img class="img" src="./الصورة المغبرة/6.jpeg">
+        <img class="img" src="./الصورة المغبرة/7.jpeg">
+        <img class="img" src="./الصورة المغبرة/8.jpeg">
+        <img class="img" src="./الصورة المغبرة/9.jpeg">
+        <img class="img" src="./الصورة المغبرة/10.jpeg">
+        <img class="img" src="./الصورة المغبرة/11.jpeg">  
+   </div>
+
+  
+
+  
+ <footer class="footer">
+    <div class="footerdiv">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returans</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-col">
+                <h4>Sources</h4>
+                <ul>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Google</a></li>
+                    <li><a href="#">Stackoverflow</a></li>
+                    <li><a href="#"></a></li>
+                    
+                </ul>
+            </div> 
+
+
+
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </i></a>
+                    <a href="#"><i class="fab fa-twitter">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </i></a>
+                    <a href="#"><i class="fab fa-instagram">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </i></a>
+                    <a href="#"><i class="fab fa-linkedin-in">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </i></a>
+                </div>
+
+             
+            </div>
+        </div>
+    </div>
+ </footer>  
+
+
+
+    
+</body>
+</html>
